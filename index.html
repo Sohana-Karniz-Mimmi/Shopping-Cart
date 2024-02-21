@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Management</title>
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class=" lg:w-10/12/12 w-11/12 m-auto">
+        <nav class="header-sec ">
+            <div class="header-sec flex justify-between lg:items-stretch items-center lg:py-4 py-1">
+                <div class="justify-between">
+                  <a class="lg:text-4xl text-2xl font-extrabold" href="">Shopping<span class="lg:text-4xl text-2xl  text-pink-700 font-extrabold">C</span>art</a>
+                </div>
+                <div class="flex-none">
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:h-10 lg:w-10 h-7 w-7 lg:text-4xl" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        <span id="cart-total" class="badge lg:badge-lg badge-base indicator-item text-lg font-extrabold text-pink-700">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main class="lg:w-10/12/12 w-11/12 m-auto min-h-screen">
+        <section>
+            <div class="hero-section"></div>
+        </section>
+        <h1 class="lg:w-8/12 divider text-center lg:text-3xl text-base font-extrabold lg:py-6 py-2">Featured Products</h1>
+        <div class="cart-container flex lg:justify-between md:justify-between flex-col md:flex-col lg:flex-row">
+            <div class="flex lg:w-8/12 w-full lg:flex-row flex-wrap flex-col lg:gap-12 gap-3">
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/shoe.jpeg" alt="Shoes" /></figure>
+                    <div class="pb-5">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold">Shoes!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span> </p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/shoe.jpeg" alt="Shoes" /></figure>
+                    <div class="pb-5">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold">Shoes!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span> </p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/watch.jpg" alt="Watch" /></figure>
+                    <div class="pb-5">
+                      <div class="text-center">
+                        <h2 class="text-2xl font-bold">Watch!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span></p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/watch.jpg" alt="Watch" /></figure>
+                    <div class="pb-5">
+                      <div class="text-center">
+                        <h2 class="text-2xl font-bold">Watch!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span></p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/watch.jpg" alt="Watch" /></figure>
+                    <div class="pb-5">
+                      <div class="text-center">
+                        <h2 class="text-2xl font-bold">Watch!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span></p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/T-shirt.jpg" alt="T-Shirt" /></figure>
+                    <div class="pb-5">
+                      <div class="text-center">
+                        <h2 class="text-2xl font-bold">T-shirt!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span> </p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/T-shirt.jpg" alt="T-Shirt" /></figure>
+                    <div class="pb-5">
+                      <div class="text-center">
+                        <h2 class="text-2xl font-bold">T-shirt!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span> </p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/T-shirt.jpg" alt="T-Shirt" /></figure>
+                    <div class="pb-5">
+                      <div class="text-center">
+                        <h2 class="text-2xl font-bold">T-shirt!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span> </p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/T-shirt.jpg" alt="T-Shirt" /></figure>
+                    <div class="pb-5">
+                      <div class="text-center">
+                        <h2 class="text-2xl font-bold">T-shirt!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span> </p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/T-shirt.jpg" alt="T-Shirt" /></figure>
+                    <div class="pb-5">
+                      <div class="text-center">
+                        <h2 class="text-2xl font-bold">T-shirt!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span> </p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/T-shirt.jpg" alt="T-Shirt" /></figure>
+                    <div class="pb-5">
+                      <div class="text-center">
+                        <h2 class="text-2xl font-bold">T-shirt!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span> </p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="card card-compact lg:w-80 w-full bg-base-100 shadow-xl ">
+                    <figure class="p-6"><img class="rounded-xl" src="images/T-shirt.jpg" alt="T-Shirt" /></figure>
+                    <div class="pb-5">
+                      <div class="text-center">
+                        <h2 class="text-2xl font-bold">T-shirt!</h2>
+                        <p class="py-2 font-bold">Price: $<span>300</span> </p>
+                        <button class="btn bg-pink-700 hover:bg-pink-800 text-white  add-btn">ADD TO CART</button>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="cart-total-container lg:w-4/12 w-full text-center p-7 shadow-lg shadow-slate-200 bg-white">
+                <h1 class="text-lg font-bold">Cart</h1>
+                <div class="divider m-0 h-3"></div>
+                <h1 class="text-lg font-bold pb-1">Total Cost: $<span></span>0</h1>
+               
+                <button class="btn bg-pink-700 hover:bg-pink-800 text-white">Bus +100</button>
+                <button class="btn bg-pink-700 hover:bg-pink-800 text-white">Train -200</button>
+                <button class="btn bg-pink-700 hover:bg-pink-800 text-white">Flight +500</button>
+                <div class="divider h-6 m-0"></div>
+                <h1 class="text-lg font-bold">Grand Total: $<span></span>0</h1>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
